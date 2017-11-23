@@ -29,7 +29,7 @@
                      HFormNoralPlaceMaxDele(@"控制长度",NumTextFieldHFormStyle, @"请输入联系电话", @"legalMobileNo",@11,self),//联系电话
                      HFormNoralPlaceDele(@"数字键盘",NumTextFieldHFormStyle, @"请输入注册地址", @"postAddress",self),//注册地址
                      HFormNoralPlaceDele(@"数字键盘带点",NumTextFieldDocHFormStyle, @"请输入电子邮箱", @"legalEmail",self),//输入邮箱
-                     HFormNoralPlaceDele(@"正常键盘",NomalTextFieldHFormStyle, @"请输入电子邮箱", @"legalEmail",self),//输入邮箱
+                     HFormNoralPlaceDele(@"正常键盘",NomalTextFieldHFormStyle, @"请输入电子邮箱", @"nomal",self),//输入邮箱
                      
                      ];
     
