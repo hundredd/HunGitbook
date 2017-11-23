@@ -84,12 +84,12 @@
 		B19E734A1FC66A95002DCB7C /* MessageToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73491FC66A95002DCB7C /* MessageToastView.m */; };
 		B19E734E1FC67231002DCB7C /* QHTimerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E734D1FC67231002DCB7C /* QHTimerUtil.m */; };
 		B19E73511FC6736E002DCB7C /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73501FC6736E002DCB7C /* UIButton+BackgroundColor.m */; };
-		B19E73531FC6787D002DCB7C /* info.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = B19E73521FC6787D002DCB7C /* info.Bundle */; };
 		B19E73561FC678A8002DCB7C /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73551FC678A8002DCB7C /* BaseScrollViewController.m */; };
 		B19E73591FC67B08002DCB7C /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73581FC67B08002DCB7C /* TargetViewController.m */; };
 		B19E735C1FC6A468002DCB7C /* BaseEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E735B1FC6A468002DCB7C /* BaseEditView.m */; };
 		B19E735E1FC6B8A6002DCB7C /* infoShow.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */; };
 		B19E73611FC6B8BF002DCB7C /* UIImage+HForm.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */; };
+		B19E73641FC6C470002DCB7C /* EditDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73631FC6C470002DCB7C /* EditDemoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,7 +269,6 @@
 		B19E734D1FC67231002DCB7C /* QHTimerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTimerUtil.m; sourceTree = "<group>"; };
 		B19E734F1FC6736E002DCB7C /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
 		B19E73501FC6736E002DCB7C /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
-		B19E73521FC6787D002DCB7C /* info.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = info.Bundle; sourceTree = "<group>"; };
 		B19E73541FC678A8002DCB7C /* BaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollViewController.h; sourceTree = "<group>"; };
 		B19E73551FC678A8002DCB7C /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
 		B19E73571FC67B08002DCB7C /* TargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
@@ -279,6 +278,8 @@
 		B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = infoShow.Bundle; sourceTree = "<group>"; };
 		B19E735F1FC6B8BF002DCB7C /* UIImage+HForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HForm.h"; sourceTree = "<group>"; };
 		B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HForm.m"; sourceTree = "<group>"; };
+		B19E73621FC6C470002DCB7C /* EditDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EditDemoView.h; path = ../../../../HForm/Component/Categary/EditDemoView.h; sourceTree = "<group>"; };
+		B19E73631FC6C470002DCB7C /* EditDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EditDemoView.m; path = ../../../../HForm/Component/Categary/EditDemoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +386,8 @@
 			children = (
 				B19E735A1FC6A468002DCB7C /* BaseEditView.h */,
 				B19E735B1FC6A468002DCB7C /* BaseEditView.m */,
+				B19E73621FC6C470002DCB7C /* EditDemoView.h */,
+				B19E73631FC6C470002DCB7C /* EditDemoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,7 +409,6 @@
 			isa = PBXGroup;
 			children = (
 				B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */,
-				B19E73521FC6787D002DCB7C /* info.Bundle */,
 				B19E72A51FC65BB7002DCB7C /* Component */,
 				B19E72631FC65A2E002DCB7C /* Config */,
 				B19E72671FC65A2E002DCB7C /* HFormManager.h */,
@@ -877,7 +879,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19E72FB1FC65EDC002DCB7C /* LICENSE in Resources */,
-				B19E73531FC6787D002DCB7C /* info.Bundle in Resources */,
 				B19E72361FC65675002DCB7C /* LaunchScreen.storyboard in Resources */,
 				B19E72B21FC65BB7002DCB7C /* city.plist in Resources */,
 				B19E735E1FC6B8A6002DCB7C /* infoShow.Bundle in Resources */,
@@ -957,6 +958,7 @@
 				B19E72961FC65A2E002DCB7C /* HFormDoubleDateUnit.m in Sources */,
 				B19E72391FC65675002DCB7C /* main.m in Sources */,
 				B19E73331FC662F1002DCB7C /* WXZPickCityView.m in Sources */,
+				B19E73641FC6C470002DCB7C /* EditDemoView.m in Sources */,
 				B19E735C1FC6A468002DCB7C /* BaseEditView.m in Sources */,
 				B19E731F1FC662C1002DCB7C /* HImageOtpTextField.m in Sources */,
 				B19E73211FC662C1002DCB7C /* HSmsOtpTextField.m in Sources */,
