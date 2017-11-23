@@ -104,4 +104,19 @@
         return YES;
     }
 }
+
++(id)CheckNotNull:(id)object
+{
+    //如果是空的就传空字符串,主要用在数据解析过程
+    if (!object) {
+        return @"";
+    }
+    if ([object isKindOfClass:[NSString class]]) {
+        //去除左右的空格!不去除中间的
+        object = [object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    }
+    
+    return object;
+}
+
 @end

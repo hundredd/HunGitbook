@@ -19,4 +19,7 @@
 +(NSString *)dateNow;
 
 + (BOOL)strNilOrEmpty:(NSString *)string;
+
+//校验是否为空,非空传回去
++(id)CheckNotNull:(id)object;
 @end

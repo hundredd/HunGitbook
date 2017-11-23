@@ -27,23 +27,7 @@
 {
     TargetViewController *vc = [TargetViewController new];
     vc.title = sender.titleLabel.text;
-    switch (sender.tag)
-    {
-        case 0:
-            
-            break;
-        case 1:
-            
-            break;
-        case 2:
-            
-            break;
-        case 3:
-            
-            break;
-        default:
-            break;
-    }
+    vc.style = sender.tag;
     
     [self.navigationController pushViewController:vc animated:YES];
     

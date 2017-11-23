@@ -94,7 +94,7 @@
                 textField.isButtonHide = YES;
                 break;
             case NumTextFieldDocHFormStyle:
-                textField = [[HFormEditUnit alloc]initWithStyle:TextFieldNomalHFormEditUnitStyle];
+                textField = [[HFormEditUnit alloc]initWithStyle:TextFieldNumDocHFormEditUnitStyle];
                 textField.isButtonHide = YES;
                 break;
             case ButtonHFormStyle:

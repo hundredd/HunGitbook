@@ -11,6 +11,7 @@
 #ifndef HFormModule_h
 #define HFormModule_h
 
+#define HNotNull(value) [HTools CheckNotNull:value]
 //一般展示
 #define HFormNoral(title,style,Key) @{@"title":title,@"style":@(style),@"key":Key}
 

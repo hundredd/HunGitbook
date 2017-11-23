@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1348BC91FC6CD7F0086AC7D /* EditDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1348BC81FC6CD7F0086AC7D /* EditDemoView.m */; };
+		B1348BCC1FC6D58A0086AC7D /* PickerDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1348BCB1FC6D58A0086AC7D /* PickerDemoView.m */; };
+		B1348BCF1FC6D7270086AC7D /* SelectDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1348BCE1FC6D7270086AC7D /* SelectDemoView.m */; };
 		B19E722B1FC65675002DCB7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E722A1FC65675002DCB7C /* AppDelegate.m */; };
 		B19E72311FC65675002DCB7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19E722F1FC65675002DCB7C /* Main.storyboard */; };
 		B19E72331FC65675002DCB7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19E72321FC65675002DCB7C /* Assets.xcassets */; };
@@ -89,7 +92,6 @@
 		B19E735C1FC6A468002DCB7C /* BaseEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E735B1FC6A468002DCB7C /* BaseEditView.m */; };
 		B19E735E1FC6B8A6002DCB7C /* infoShow.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */; };
 		B19E73611FC6B8BF002DCB7C /* UIImage+HForm.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */; };
-		B19E73641FC6C470002DCB7C /* EditDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73631FC6C470002DCB7C /* EditDemoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1348BC71FC6CD7F0086AC7D /* EditDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditDemoView.h; sourceTree = "<group>"; };
+		B1348BC81FC6CD7F0086AC7D /* EditDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditDemoView.m; sourceTree = "<group>"; };
+		B1348BCA1FC6D58A0086AC7D /* PickerDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerDemoView.h; sourceTree = "<group>"; };
+		B1348BCB1FC6D58A0086AC7D /* PickerDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerDemoView.m; sourceTree = "<group>"; };
+		B1348BCD1FC6D7270086AC7D /* SelectDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectDemoView.h; sourceTree = "<group>"; };
+		B1348BCE1FC6D7270086AC7D /* SelectDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectDemoView.m; sourceTree = "<group>"; };
 		B19E72261FC65675002DCB7C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19E72291FC65675002DCB7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B19E722A1FC65675002DCB7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -278,8 +286,6 @@
 		B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = infoShow.Bundle; sourceTree = "<group>"; };
 		B19E735F1FC6B8BF002DCB7C /* UIImage+HForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HForm.h"; sourceTree = "<group>"; };
 		B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HForm.m"; sourceTree = "<group>"; };
-		B19E73621FC6C470002DCB7C /* EditDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EditDemoView.h; path = ../../../../HForm/Component/Categary/EditDemoView.h; sourceTree = "<group>"; };
-		B19E73631FC6C470002DCB7C /* EditDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EditDemoView.m; path = ../../../../HForm/Component/Categary/EditDemoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,8 +392,12 @@
 			children = (
 				B19E735A1FC6A468002DCB7C /* BaseEditView.h */,
 				B19E735B1FC6A468002DCB7C /* BaseEditView.m */,
-				B19E73621FC6C470002DCB7C /* EditDemoView.h */,
-				B19E73631FC6C470002DCB7C /* EditDemoView.m */,
+				B1348BC71FC6CD7F0086AC7D /* EditDemoView.h */,
+				B1348BC81FC6CD7F0086AC7D /* EditDemoView.m */,
+				B1348BCA1FC6D58A0086AC7D /* PickerDemoView.h */,
+				B1348BCB1FC6D58A0086AC7D /* PickerDemoView.m */,
+				B1348BCD1FC6D7270086AC7D /* SelectDemoView.h */,
+				B1348BCE1FC6D7270086AC7D /* SelectDemoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -926,6 +936,7 @@
 				B19E72DA1FC65C2A002DCB7C /* NSArray+MASAdditions.m in Sources */,
 				B19E72A41FC65A2E002DCB7C /* EditSampleView.m in Sources */,
 				B19E729B1FC65A2E002DCB7C /* HFormPickerManager.m in Sources */,
+				B1348BCF1FC6D7270086AC7D /* SelectDemoView.m in Sources */,
 				B19E72E11FC65E47002DCB7C /* UILabel+extension.m in Sources */,
 				B19E73051FC65EDC002DCB7C /* NSString+MJExtension.m in Sources */,
 				B19E72951FC65A2E002DCB7C /* HFormBaseItem.m in Sources */,
@@ -958,7 +969,6 @@
 				B19E72961FC65A2E002DCB7C /* HFormDoubleDateUnit.m in Sources */,
 				B19E72391FC65675002DCB7C /* main.m in Sources */,
 				B19E73331FC662F1002DCB7C /* WXZPickCityView.m in Sources */,
-				B19E73641FC6C470002DCB7C /* EditDemoView.m in Sources */,
 				B19E735C1FC6A468002DCB7C /* BaseEditView.m in Sources */,
 				B19E731F1FC662C1002DCB7C /* HImageOtpTextField.m in Sources */,
 				B19E73211FC662C1002DCB7C /* HSmsOtpTextField.m in Sources */,
@@ -980,7 +990,9 @@
 				B19E733C1FC6679E002DCB7C /* UIView+LayoutMethods.m in Sources */,
 				B19E73351FC662F1002DCB7C /* WXZPickTimeView.m in Sources */,
 				B19E72FF1FC65EDC002DCB7C /* MJPropertyKey.m in Sources */,
+				B1348BC91FC6CD7F0086AC7D /* EditDemoView.m in Sources */,
 				B19E73221FC662C1002DCB7C /* HTextField.m in Sources */,
+				B1348BCC1FC6D58A0086AC7D /* PickerDemoView.m in Sources */,
 				B19E72A31FC65A2E002DCB7C /* HFormOriginModel.m in Sources */,
 				B19E73611FC6B8BF002DCB7C /* UIImage+HForm.m in Sources */,
 			);

@@ -8,8 +8,9 @@
 
 #import "TargetViewController.h"
 #import "BaseEditView.h"
-
-
+#import "EditDemoView.h"
+#import "PickerDemoView.h"
+#import "SelectDemoView.h"
 @interface TargetViewController ()
 
 @property(nonatomic,strong)BaseEditView *editView ; //显示!
@@ -41,7 +42,25 @@
 -(BaseEditView *)editView
 {
     if (!_editView) {
-        _editView = [BaseEditView new];
+        switch (self.style)
+        {
+            case SynthesizeStyle:
+                _editView = [BaseEditView new];
+                break;
+            case TextStyle:
+                _editView = [EditDemoView new];
+                break;
+            case PickerStyle:
+                _editView = [PickerDemoView new];
+                break;
+            case SelectStyle:
+                _editView = [SelectDemoView new];
+                break;
+            default:
+                _editView = [BaseEditView new];
+                break;
+        }
+        
     }
     return _editView;
 }
