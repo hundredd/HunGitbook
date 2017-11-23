@@ -87,6 +87,9 @@
 		B19E73531FC6787D002DCB7C /* info.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = B19E73521FC6787D002DCB7C /* info.Bundle */; };
 		B19E73561FC678A8002DCB7C /* BaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73551FC678A8002DCB7C /* BaseScrollViewController.m */; };
 		B19E73591FC67B08002DCB7C /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73581FC67B08002DCB7C /* TargetViewController.m */; };
+		B19E735C1FC6A468002DCB7C /* BaseEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E735B1FC6A468002DCB7C /* BaseEditView.m */; };
+		B19E735E1FC6B8A6002DCB7C /* infoShow.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */; };
+		B19E73611FC6B8BF002DCB7C /* UIImage+HForm.m in Sources */ = {isa = PBXBuildFile; fileRef = B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +274,11 @@
 		B19E73551FC678A8002DCB7C /* BaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollViewController.m; sourceTree = "<group>"; };
 		B19E73571FC67B08002DCB7C /* TargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
 		B19E73581FC67B08002DCB7C /* TargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
+		B19E735A1FC6A468002DCB7C /* BaseEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseEditView.h; path = "../../../../../../../../Library/Autosave Information/BaseEditView.h"; sourceTree = "<group>"; };
+		B19E735B1FC6A468002DCB7C /* BaseEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BaseEditView.m; path = "../../../../../../../../Library/Autosave Information/BaseEditView.m"; sourceTree = "<group>"; };
+		B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = infoShow.Bundle; sourceTree = "<group>"; };
+		B19E735F1FC6B8BF002DCB7C /* UIImage+HForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HForm.h"; sourceTree = "<group>"; };
+		B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HForm.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +383,8 @@
 		B19E725D1FC65A23002DCB7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B19E735A1FC6A468002DCB7C /* BaseEditView.h */,
+				B19E735B1FC6A468002DCB7C /* BaseEditView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +405,7 @@
 		B19E72621FC65A2E002DCB7C /* HForm */ = {
 			isa = PBXGroup;
 			children = (
+				B19E735D1FC6B8A6002DCB7C /* infoShow.Bundle */,
 				B19E73521FC6787D002DCB7C /* info.Bundle */,
 				B19E72A51FC65BB7002DCB7C /* Component */,
 				B19E72631FC65A2E002DCB7C /* Config */,
@@ -626,6 +637,8 @@
 				B19E733A1FC6679E002DCB7C /* UIView+LayoutMethods.m */,
 				B19E72DF1FC65E47002DCB7C /* UILabel+extension.h */,
 				B19E72E01FC65E47002DCB7C /* UILabel+extension.m */,
+				B19E735F1FC6B8BF002DCB7C /* UIImage+HForm.h */,
+				B19E73601FC6B8BF002DCB7C /* UIImage+HForm.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -867,6 +880,7 @@
 				B19E73531FC6787D002DCB7C /* info.Bundle in Resources */,
 				B19E72361FC65675002DCB7C /* LaunchScreen.storyboard in Resources */,
 				B19E72B21FC65BB7002DCB7C /* city.plist in Resources */,
+				B19E735E1FC6B8A6002DCB7C /* infoShow.Bundle in Resources */,
 				B19E73061FC65EDC002DCB7C /* README.md in Resources */,
 				B19E72331FC65675002DCB7C /* Assets.xcassets in Resources */,
 				B19E73301FC662F1002DCB7C /* area.plist in Resources */,
@@ -943,6 +957,7 @@
 				B19E72961FC65A2E002DCB7C /* HFormDoubleDateUnit.m in Sources */,
 				B19E72391FC65675002DCB7C /* main.m in Sources */,
 				B19E73331FC662F1002DCB7C /* WXZPickCityView.m in Sources */,
+				B19E735C1FC6A468002DCB7C /* BaseEditView.m in Sources */,
 				B19E731F1FC662C1002DCB7C /* HImageOtpTextField.m in Sources */,
 				B19E73211FC662C1002DCB7C /* HSmsOtpTextField.m in Sources */,
 				B19E72DB1FC65C2A002DCB7C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -965,6 +980,7 @@
 				B19E72FF1FC65EDC002DCB7C /* MJPropertyKey.m in Sources */,
 				B19E73221FC662C1002DCB7C /* HTextField.m in Sources */,
 				B19E72A31FC65A2E002DCB7C /* HFormOriginModel.m in Sources */,
+				B19E73611FC6B8BF002DCB7C /* UIImage+HForm.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

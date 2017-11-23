@@ -173,7 +173,7 @@
     self.delegate = self.originModel.delegate;
     UIButton *remarkImg = [[UIButton alloc] init];
     [remarkImg addTarget:self action:@selector(remarkAction) forControlEvents:UIControlEventTouchUpInside];
-    [remarkImg setImage:[UIImage imageNamed:self.originModel.remarkImg] forState:UIControlStateNormal];//[UIImageManager imageNamed:self.originModel.remarkImg]
+    [remarkImg setImage:[UIImage bundleImgWithName:self.originModel.remarkImg] forState:UIControlStateNormal];//[UIImageManager bundleImgWithName:self.originModel.remarkImg]
     
     [self addSubview:remarkImg];
     

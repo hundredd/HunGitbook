@@ -16,6 +16,6 @@
 #import "UIView+LayoutMethods.h"
 #import "UIView+Toast.h"
 #import "UIButton+BackgroundColor.h"
-
+#import "UIImage+HForm.h"
 
 #endif /* PrefixHeader_pch */

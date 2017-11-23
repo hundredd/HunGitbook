@@ -74,7 +74,7 @@
 
     WEAK_SELF;
     [_scrollV mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(weakSelf.navigationController.navigationBar.mas_bottom);
+        make.top.equalTo(weakSelf.view);
         make.left.right.equalTo(weakSelf.view);
         make.bottom.equalTo(weakSelf.view);
     }];

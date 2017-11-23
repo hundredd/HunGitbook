@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TargetViewController.h"
 
 @interface ViewController ()
+
 
 @end
 
@@ -16,14 +18,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)senderAction:(UIButton *)sender
+{
+    TargetViewController *vc = [TargetViewController new];
+    vc.title = sender.titleLabel.text;
+    switch (sender.tag)
+    {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        default:
+            break;
+    }
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
+
 
 
 @end

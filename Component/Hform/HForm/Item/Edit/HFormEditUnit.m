@@ -182,7 +182,7 @@
 {
     _isRightStyle = isRightStyle;
     if (isRightStyle) {
-        self.imgV.image =[UIImage imageNamed:@"arrow_right"];// [UIImageManager imageNamed:@"special_arrow_right"];
+        self.imgV.image =[UIImage bundleImgWithName:@"arrow_right"];// [UIImageManager bundleImgWithName:@"special_arrow_right"];
     }
 }
 
@@ -203,7 +203,7 @@
     //这里实现是否弹出时间框
     if (self.isDate) {
         HDateAlertview *alert = [[HDateAlertview alloc] initWithFrame:CGRectMake(10, (kScreenHeight-260)/2, kScreenWidth-20, 260)];
-        //alert.image = [UIImage imageNamed:@"dikuang"];
+        //alert.image = [UIImage bundleImgWithName:@"dikuang"];
         alert.delegate = self;
 #pragma mark - 设置中间时间键
         if (self.isPickShowCenter) {
@@ -346,7 +346,7 @@
 {
     if (!_imgV) {
         UIImageView *imgV = [UIImageView new];
-        imgV.image = [UIImage imageNamed:@"arrow_down"];//[UIImageManager imageNamed:@"special_arrow_down"];
+        imgV.image = [UIImage bundleImgWithName:@"arrow_down"];//[UIImageManager bundleImgWithName:@"special_arrow_down"];
         imgV.hidden = YES;
         [self addSubview:imgV];
         _imgV = imgV;

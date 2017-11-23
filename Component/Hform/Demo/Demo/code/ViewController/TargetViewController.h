@@ -17,4 +17,6 @@ typedef NS_ENUM(NSUInteger, Targetstyle) {
 
 @interface TargetViewController : BaseScrollViewController
 
+@property(nonatomic,assign)Targetstyle style ;//默认采用综合!
+
 @end

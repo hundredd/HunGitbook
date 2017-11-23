@@ -20,8 +20,8 @@
         
         CGFloat rowPadding = 3;
         CGFloat colPadding = 3;
-        UIImage *btnImg0 = [UIImage imageNamed:@"key_num_nor"];//[UIImageManager imageNamed:@"keyboard_key_num_nor"];
-        UIImage *btnImg1 = [UIImage imageNamed:@"key_num_hig"];//[UIImageManager imageNamed:@"keyboard_key_num_hig"];
+        UIImage *btnImg0 = [UIImage bundleImgWithName:@"key_num_nor"];//[UIImageManager bundleImgWithName:@"keyboard_key_num_nor"];
+        UIImage *btnImg1 = [UIImage bundleImgWithName:@"key_num_hig"];//[UIImageManager bundleImgWithName:@"keyboard_key_num_hig"];
         int btnWidth = (kScreenWidth-4*colPadding)/3;
         int btnHeight = (frame.size.height-5*rowPadding)/4;
 
@@ -48,8 +48,8 @@
             [self addSubview:tmpBtn];
         }
         //删除按钮
-        UIImage *delImg0 = [UIImage imageNamed:@"key_num_del_nor"];//[UIImageManager imageNamed:@"keyboard_key_num_del_nor"];
-        UIImage *delImg1 =[UIImage imageNamed:@"key_num_del_hig"];// [UIImageManager imageNamed:@"keyboard_key_num_del_hig"];
+        UIImage *delImg0 = [UIImage bundleImgWithName:@"key_num_del_nor"];//[UIImageManager bundleImgWithName:@"keyboard_key_num_del_nor"];
+        UIImage *delImg1 =[UIImage bundleImgWithName:@"key_num_del_hig"];// [UIImageManager bundleImgWithName:@"keyboard_key_num_del_hig"];
         UIButton *delBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [delBtn setBackgroundImage:delImg0 forState:UIControlStateNormal];
         [delBtn setBackgroundImage:delImg1 forState:UIControlStateHighlighted];
@@ -59,8 +59,8 @@
         
 
         //确定按钮按钮
-        UIImage *abcImg = [UIImage imageNamed:@"key_num_bottom"];// [UIImageManager imageNamed:@"keyboard_key_num_bottom"];
-        UIImage *dotImg0 = [UIImage imageNamed:@"key_dot_hig"];//[UIImageManager imageNamed:@"keyboard_key_dot_hig"];
+        UIImage *abcImg = [UIImage bundleImgWithName:@"key_num_bottom"];// [UIImageManager bundleImgWithName:@"keyboard_key_num_bottom"];
+        UIImage *dotImg0 = [UIImage bundleImgWithName:@"key_dot_hig"];//[UIImageManager bundleImgWithName:@"keyboard_key_dot_hig"];
         UIButton *abcBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         abcBtn.titleLabel.font = FONT(titleFontSize);
         [abcBtn setBackgroundImage:abcImg forState:UIControlStateNormal];

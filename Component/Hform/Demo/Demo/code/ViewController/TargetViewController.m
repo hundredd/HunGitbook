@@ -7,16 +7,36 @@
 //
 
 #import "TargetViewController.h"
+#import "BaseEditView.h"
+
 
 @interface TargetViewController ()
+
+@property(nonatomic,strong)BaseEditView *editView ;//显示!
+
 
 @end
 
 @implementation TargetViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
+
+-(void)setupContentUI
+{
+    [self.contentV addSubview:self.editView];
+    WEAK_SELF;
+    [self.editView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(weakSelf.contentV);
+    }];
+}
+
+-(BaseEditView *)editView
+{
+    if (!_editView) {
+        _editView = [BaseEditView new];
+    }
+    return _editView;
 }
 
 

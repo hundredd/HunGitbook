@@ -50,18 +50,18 @@
         //多选项的活动管理
         if (isSelected) {
             
-            _selectedImg.image =[UIImage imageNamed:@"icon-_checkbox_selected"];// [UIImageManager imageNamed:@"activity_icon-_checkbox_selected"];
+            _selectedImg.image =[UIImage bundleImgWithName:@"icon-_checkbox_selected"];// [UIImageManager bundleImgWithName:@"activity_icon-_checkbox_selected"];
         }else
         {
-            _selectedImg.image =[UIImage imageNamed:@"icon-_checkbox_unselected"];// [UIImageManager imageNamed:@"activity_icon-_checkbox_unselected"];
+            _selectedImg.image =[UIImage bundleImgWithName:@"icon-_checkbox_unselected"];// [UIImageManager bundleImgWithName:@"activity_icon-_checkbox_unselected"];
         }
     }else
     {
         if (isSelected) {
-            _selectedImg.image = [UIImage imageNamed:@"icon_checkbox_selected"];// [UIImageManager imageNamed:@"common_icon_checkbox_selected"];
+            _selectedImg.image = [UIImage bundleImgWithName:@"icon_checkbox_selected"];// [UIImageManager bundleImgWithName:@"common_icon_checkbox_selected"];
         }else
         {
-            _selectedImg.image = [UIImage imageNamed:@"icon_checkbox"];// [UIImageManager imageNamed:@"common_icon_checkbox"];
+            _selectedImg.image = [UIImage bundleImgWithName:@"icon_checkbox"];// [UIImageManager bundleImgWithName:@"common_icon_checkbox"];
         }
     }
     
@@ -139,9 +139,9 @@
         //多选项的
         if (_isMuti)
         {
-            imgV.image = [UIImage imageNamed:@"icon-_checkbox_unselected"];//[UIImageManager imageNamed:@"activity_icon-_checkbox_unselected"];
+            imgV.image = [UIImage bundleImgWithName:@"icon-_checkbox_unselected"];//[UIImageManager bundleImgWithName:@"activity_icon-_checkbox_unselected"];
         }else
-            imgV.image = [UIImage imageNamed:@"icon_checkbox"];//[UIImageManager imageNamed:@"common_icon_checkbox"];
+            imgV.image = [UIImage bundleImgWithName:@"icon_checkbox"];//[UIImageManager bundleImgWithName:@"common_icon_checkbox"];
         [self addSubview:imgV];
         _selectedImg = imgV;
     }

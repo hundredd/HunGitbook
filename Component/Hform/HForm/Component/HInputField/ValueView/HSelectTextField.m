@@ -124,7 +124,7 @@
 - (UIImageView *)selectView {
     if (_selectView == nil) {
         _selectView = [[UIImageView alloc] init];
-        _selectView.image = [UIImage imageNamed:@"arrow_down"];//[UIImageManager imageNamed:@"common_arrow_down"];
+        _selectView.image = [UIImage bundleImgWithName:@"arrow_down"];//[UIImageManager bundleImgWithName:@"common_arrow_down"];
     }
     return _selectView;
 }
