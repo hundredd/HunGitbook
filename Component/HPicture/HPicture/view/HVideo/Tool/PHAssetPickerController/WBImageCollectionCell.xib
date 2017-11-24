@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WBImageCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sr4-NJ-8mt">
+                        <rect key="frame" x="0.0" y="0.0" width="107" height="120"/>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mh-lX-L2p">
+                        <rect key="frame" x="72" y="0.0" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="EiX-8P-R8I"/>
+                            <constraint firstAttribute="height" constant="35" id="q8x-Ph-CUF"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="unselect.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdj-4M-UN3">
+                        <rect key="frame" x="107" y="120" width="0.0" height="0.0"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="top" secondItem="Sr4-NJ-8mt" secondAttribute="top" id="EV7-4I-hkX"/>
+                <constraint firstItem="Sr4-NJ-8mt" firstAttribute="trailing" secondItem="SEy-5g-ep8" secondAttribute="trailing" id="Kqq-za-qST"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="leading" secondItem="Sr4-NJ-8mt" secondAttribute="leading" id="LnE-BL-kDr"/>
+                <constraint firstItem="0Mh-lX-L2p" firstAttribute="top" secondItem="Sr4-NJ-8mt" secondAttribute="top" id="jkb-sh-sqB"/>
+                <constraint firstItem="tdj-4M-UN3" firstAttribute="bottom" secondItem="Sr4-NJ-8mt" secondAttribute="bottom" id="nfh-IA-h5C"/>
+                <constraint firstItem="0Mh-lX-L2p" firstAttribute="trailing" secondItem="Sr4-NJ-8mt" secondAttribute="trailing" id="rOJ-D1-VEm"/>
+                <constraint firstItem="tdj-4M-UN3" firstAttribute="trailing" secondItem="Sr4-NJ-8mt" secondAttribute="trailing" id="uOt-5d-z2E"/>
+                <constraint firstItem="Sr4-NJ-8mt" firstAttribute="bottom" secondItem="SEy-5g-ep8" secondAttribute="bottom" id="w37-rw-a6f"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="107" height="120"/>
+            <connections>
+                <outlet property="detailLB" destination="tdj-4M-UN3" id="QPy-Bx-zeM"/>
+                <outlet property="imageView" destination="Sr4-NJ-8mt" id="Bgt-X4-MLC"/>
+                <outlet property="selectButton" destination="0Mh-lX-L2p" id="6ue-mu-ooj"/>
+            </connections>
+            <point key="canvasLocation" x="67.5" y="89"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="unselect.png" width="114" height="114"/>
+    </resources>
+</document>
