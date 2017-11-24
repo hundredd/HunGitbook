@@ -80,7 +80,7 @@
     //这里进行区分
     WEAK_SELF;
     //这里要做区分,
-    if (self.style == PickerHFormStyle)
+    if (self.style == PickerHFormStyle||self.style==AddressHFormStyle)
     {
         [self addSubview:self.pickerItem];
         //因为布局的内容一致,就用一个就可以了
